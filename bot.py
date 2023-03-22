@@ -451,24 +451,22 @@ def game():  # функция игры
         result()
         print("Спасибо что сыграли со мной, прощайте!")
     else:
-        answers = []
-        print("Спасибо что сыграли со мной, прощайте!")
-        # print("Спасибо что сыграли со мной, а может хотите заного пройти? да\нет")
-        # end1 = str(input())
-        # if end1 == "да":
-        #     game()
-        # else:print("Прощайте!")
+        answers.clear()
+        print("Спасибо что сыграли со мной, а может хотите заного пройти? да\нет")
+        end1 = str(input())
+        if end1 == "да":
+            game()
+        else:print("Прощайте!")
 
 def result():
     for i in range(len(answers)):
         print(answers[i])
-    print("Спасибо что сыграли со мной, прощайте!")
-    answers = []
-    # print("Спасибо что сыграли со мной, а может хотите заного пройти? да\нет")
-    # end1 = str(input())
-    # if end1 == "да":
-    #     game()
-    # else:print("Прощайте!")
+    answers.clear()
+    print("Спасибо что сыграли со мной, а может хотите заного пройти? да\нет")
+    end1 = str(input())
+    if end1 == "да":
+        game()
+    else:print("Прощайте!")
     
 
 
