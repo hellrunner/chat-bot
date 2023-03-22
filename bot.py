@@ -466,5 +466,6 @@ def result():
     else:print("Прощайте!")
 
 
+
 if __name__ == '__main__': # запуск программы
     hi()
